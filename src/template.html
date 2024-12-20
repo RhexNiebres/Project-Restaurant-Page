@@ -8,12 +8,31 @@
 <body>
     <header>
         <nav>
-            <button>Home</button>
-            <button>Menu</button>
-            <button>About</button>
+            <button id="homeTab">Home</button>
+            <button id="menuTab">Menu</button>
+            <button id="aboutTab">About</button>
         </nav>
     </header>
     <div id="content"></div>
-    <script></script>
+
+    <footer>
+        <p>&copy; 2024 Rhex Niebres. All rights reserved.</p>
+    </footer>
+    <script type="module">
+        import loadHome from './homeTab.js';
+        
+        const content = document.getElementById('content');
+
+        const homeTab = document.getElementById('homeTab');
+        homeTab.addEventListener('click',()=>{
+            content.textContent='';
+            loadHome(content)
+        });
+
+        document.addEventListener('DOMContentLoaded', () => { 
+    loadHome(content);
+});
+//load home content by defualt
+    </script>
 </body>
 </html>
