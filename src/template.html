@@ -19,7 +19,9 @@
         <p>&copy; 2024 Rhex Niebres. All rights reserved.</p>
     </footer>
     <script type="module">
+        
         import loadHome from './homeTab.js';
+        import loadAbout from './aboutTab.js';
         
         const content = document.getElementById('content');
 
@@ -28,6 +30,13 @@
             content.textContent='';
             loadHome(content)
         });
+
+        const aboutTab = document.getElementById('aboutTab');
+        aboutTab.addEventListener('click',()=>{
+            content.textContent='';
+            loadAbout(content)
+        });
+
 
         document.addEventListener('DOMContentLoaded', () => { 
     loadHome(content);
