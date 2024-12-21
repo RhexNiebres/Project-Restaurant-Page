@@ -3,13 +3,14 @@ export default function loadHome(content) {
     homeDiv.className = 'home';
 
     const section1 = document.createElement('div');
-    section1.className = 'section';
+    section1.className = 'homeSection';
     section1.innerHTML =`
-    <h1>ciri's resto</h1>
-    <p>Here to serve you the best filipino food cuisine's</p>`;
+    <h1>Ciri's Resto</h1>
+    <p>Welcome to Ciri's Resto</p>
+    <p>At Ciri's Resto, we believe that great food brings people together. Whether you’re here for a family gathering, a romantic dinner, or a quick bite with friends, we aim to create an unforgettable dining experience for everyone. </p>`;
 
     const section2 = document.createElement('div');
-    section2.className = 'section';
+    section2.className = 'homeSection';
     section2.innerHTML =`
     <h2>OPEN HOURS</h2>
     <ul>
@@ -18,7 +19,7 @@ export default function loadHome(content) {
     </ul>`;
     
     const section3 = document.createElement('div');
-    section3.className = 'section';
+    section3.className = 'homeSection';
     section3.innerHTML =`
     <h2>Location</h2>
     <p>123 Maine drive, ForestVille </p>`;
