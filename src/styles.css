@@ -39,7 +39,7 @@ button{
 .homeSection h1,h2{
   background-color: var(--secondary-color);
   color: var(--primary-color);
-  margin:2em 20em 2em 20em;
+  margin:2em;
   padding: 10px;
   border-radius: 2rem;
   text-align: center;
