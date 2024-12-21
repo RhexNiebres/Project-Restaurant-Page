@@ -1,3 +1,114 @@
-/* body {
-    background-color: rebeccapurple;
-  } */
+:root{
+  --primary-color: white;
+  --secondary-color: #73ce95;
+  --mono: monospace;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--mono), sans-serif; 
+  line-height: 1.5; 
+  color: #333; 
+  background-color:var(--primary-color)
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  background-color: #80e5a6;
+}
+
+button{
+  margin: 0.5em;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem;
+  border-radius: 25px;
+  color:var(--secondary-color);
+  background-color: var(--primary-color);
+  transition: background-color 0.3s ease;/*tansition*/
+  &:hover{
+    background-color: #80e5a6;
+    color: var(--primary-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+  }
+}
+.homeSection h1,h2{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  margin:2em 20em 2em 20em;
+  padding: 10px;
+  border-radius: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+.homeSection p,ul{
+  text-align: justify;
+  text-align: center;
+  margin: 2em 4em 5em 4em;
+  font-size: 2rem;
+  list-style-type: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  & h1{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    max-width: 9em;/*change to rem for bg to be same lenght*/
+    margin: 1em;
+    padding: 10px;
+    border-radius: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  }
+
+    & p{
+      text-align: justify;
+      text-align: center;
+      margin: 2em;
+      font-size: 1.5rem;
+      max-width: 80%;
+    }
+    & img{
+      max-width: 40em;
+      border-radius: 25px;
+    }
+  }
+
+  .about{
+    
+    & h1{
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
+      max-width: 11em;/*change to rem for bg to be same lenght*/
+      margin: 1em;
+      padding: 10px;
+      border-radius: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    }
+  
+      & p{
+        text-align: justify;
+        text-align: center;
+        margin: 2em;
+        font-size: 1.5rem;
+        max-width: 80%;
+      }
+    
+  }
+  footer{
+    background-color: var(--secondary-color);
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+  }
+  
